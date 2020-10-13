@@ -1,0 +1,12 @@
+.footer {
+    height: 323px;
+    background-image: url(../img/footer_bg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-social {
+        display: flex;
+    }
+}
+
