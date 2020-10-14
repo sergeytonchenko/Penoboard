@@ -4,17 +4,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: Arial;
 
     &-container {
         display: flex;
         justify-content: space-between;
         padding: 1rem 0;
 
-        &--left {
+        &--left, &--right {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+        }
 
+        &--right {
+            width: 100%;
+            max-width: 417px;            
+            margin-left: 100px;                      
         }
     }
 
@@ -43,6 +49,14 @@
         span {
             margin: 0 5px;
         }
+    }
+
+    &-box {
+        display: flex;
+    }
+
+    &-social {
+        display: flex;        
     }
 
 

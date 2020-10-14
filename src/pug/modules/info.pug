@@ -7,4 +7,19 @@ section
           a(href="").info-login__link Вход
           span /
           a(href="").info-login__link Регистрация      
-      .info-container--right 
+      .info-container--right
+        .info-box
+          select(name="dropdown").dropdown-lang
+            option(selected="selected" value="") RU
+            option(value="") EN
+            option(value="") UA
+          .info-social
+            p Мы в социальных сетях
+            .info-social__linkedin
+                i.fab.fa-linkedin-in
+            .info-social__wk
+                i.fab.fa-vk
+        .info-telephone
+          a(href="tel:+38(0552)314-410") тел:+38(0552)314-410,
+          a(href="tel:+38(0552)314-403") 314-403;  
+          a(href="fax:+38(0552)359-214") факс:+38(0552)359-214
