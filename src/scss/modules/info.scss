@@ -1,0 +1,49 @@
+.info  {
+    height: 721px;
+    background-image: url(../img/header-info_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+        }
+    }
+
+    &-login {
+        margin-top: 10px;
+        margin-right: 1rem;
+        float: right;
+
+        &__link, span {
+            font-size: 12px;
+            font-family: "Arial";
+            color: #01983b;
+            text-transform: uppercase;
+            line-height: 2;
+        }
+
+        &__link:hover {
+            text-shadow: 1px 1px 1px #023616;
+        }
+
+        &__link:active {
+            text-shadow: 1px 0px 1px #023616a9;            
+            color: #023616;
+        }
+
+        span {
+            margin: 0 5px;
+        }
+    }
+
+
+}
