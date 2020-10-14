@@ -1,0 +1,31 @@
+.certif {
+    height: 764px;
+    text-align: center;
+
+    &-logo {
+        margin-top: 59px;
+        margin-bottom: 11px;
+    }
+
+    &-title {
+        font-size: 30px;
+        font-family: "Arial";
+        color: #2c2783;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.533;
+    }
+
+    &-box {
+        margin-top: 32px;
+        margin-bottom: 29px;
+
+        a {
+            margin-right: 35px;
+        }
+
+        a:last-child {
+            margin-right: 0px;
+        }
+    }
+}

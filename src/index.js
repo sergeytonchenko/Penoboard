@@ -4,6 +4,7 @@ import 'jquery';
 import 'jquery-validation';
 import './js/map';
 
+
 $(document).ready(function(){
   
 

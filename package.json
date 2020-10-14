@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
+    "@fancyapps/fancybox": "^3.5.7",
     "file-loader": "^6.1.0",
     "jquery": "^3.5.1",
     "jquery-validation": "^1.19.2"

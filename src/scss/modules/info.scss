@@ -52,12 +52,31 @@
     }
 
     &-box {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+
+        & select {
+            position: relative;
+            appearance: none;
+
+            &::before {
+                position: absolute;
+                content: url("../img/arr_down.svg");
+                top: 0;
+                left: 0;
+            }
+        }
     }
 
     &-social {
         display: flex;        
     }
 
-
+    &-telephone {
+        font-size: 16px; 
+        color: rgb(44, 39, 131);
+        font-weight: bold;
+        line-height: 1.125;
+    }
 }
