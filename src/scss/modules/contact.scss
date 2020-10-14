@@ -7,9 +7,29 @@
     height: 204px;
     width: 100%;
     max-width: 1225px;
-    background: #01983b  repeat;
+    
+    background: #01983b url(../img/pattern.png)  repeat;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     box-shadow: 0px 7px 9px -1px rgba(0, 0, 0, 0.53);
     text-align: center;
+    color: #ffffff;
+
+    &-wrap {
+        padding: 33px 0;
+    }
+
+    &-title {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        
+    }
+
+    &-adress {
+        font-size: 18px;
+        line-height: 22px;        
+    }
+    
 }
