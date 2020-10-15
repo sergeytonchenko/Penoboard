@@ -1,18 +1,29 @@
 .success {
 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+
     &-wrap {
     position: relative;
     width: 100%;
-    height: 516px;
+    height: 561px;
     background-image: url(../img/success_bg.png);
     z-index: 0;
+    text-align: center;
     }
 
     &-penoboard {
-        position: absolute;
+        position: absolute;        
+        left: 0;
+        bottom: -5%;
         width: 100%;
-        height: 50%;
-        background-image: url();
+        height: 187px;
+        background-image: url(../img/penoboard.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+        z-index: 2;        
     }
 
     &-balls--1 {
@@ -25,6 +36,7 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-position: left center;
+        z-index: 2;
     }
 
     &-balls--2 {
@@ -37,6 +49,7 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-position: right bottom;
+        z-index: 2;
         
     }
 
@@ -50,9 +63,31 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-position: left center;
+        z-index: 2;
     }
 
     &-balls--4 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 560px;
+        background-image: url(../img/balls4.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right center;
+        z-index: 2;
         
+    }
+
+    &-territory-bg{
+        position: absolute;
+        width: 330px;
+        height: 330px;
+        opacity: 0.82;
+        filter: blur(5px);
+        border-radius: 50%;  
+        background-color: #04366d;
+        z-index: 50;
     }
 }
