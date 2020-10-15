@@ -31,5 +31,21 @@
         font-size: 18px;
         line-height: 22px;        
     }
+
+    &-phone {
+        margin-top: 11px;
+        margin-bottom: 8px;
+        
+        &__link {
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+    }
+
+    &__email {
+        font-size: 14px;
+        color: #ffffff;
+    }
     
 }

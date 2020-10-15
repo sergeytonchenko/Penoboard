@@ -1,8 +1,6 @@
 $(window).scroll(function () {
     const scroll = $(window).scrollTop();
     const offset = $(".success-wrap").offset().top;
-    
-    console.log(scroll);    
 
     $(".success-penoboard").css({
         bottom: ((scroll/15)-5) + "%",
