@@ -7,13 +7,12 @@ $(document).ready(function () {
         let w_top = $(window).scrollTop(); 
         let e_top = $(".success-territory__num").offset().top; 
         if (w_top + 900 >= e_top) {
-            $('.success-territory__num').css('opacity', '1');
-            $('.success-territory__num').spincrement({
+            $('.num-count').css('opacity', '1');
+            $('.num-count').spincrement({
                     thousandSeparator: "",
                     duration: 2000
                 });
             show = false;
         }
-    });
-
+    }); 
 });

@@ -115,23 +115,47 @@
         }
 
         &__num {            
-            font-size: 72px;
-            opacity: 0; 
+            font-size: 72px;            
         }
+    }
+
+    .num-count {
+        opacity: 0; 
     }
 
     &-market {
         position: absolute;
         display: flex;
+        align-items: flex-end;
         top: 84px;
         right: 448px;
         width: 384px;
-        height: 232px;        
+        // height: 232px;        
         background-image: url(../img/ellipse_2.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: 87%; 
-        z-index: 20; 
+        z-index: 20;
+        padding-top: 54px;
+        padding-bottom: 55px;        
+        
+        &__title {
+            font-size: 30px;            
+        }
+
+        &__num {
+            font-size: 163px;
+            line-height: 0.75;
+            font-weight: bold;
+            letter-spacing: -10px;                        
+        }
+
+        &__text {
+            font-size: 81px;
+            text-transform: lowercase;
+            line-height: 0.81;
+            font-weight: bold;
+        }
     }
 
     &-content {
@@ -145,5 +169,7 @@
         background-size: contain;
         background-position: center center; 
         z-index: 20;
+
+
     }    
 }
