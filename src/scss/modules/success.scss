@@ -1,8 +1,7 @@
 .success {
 
     color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform: uppercase;    
 
     &-wrap {
     position: relative;
@@ -80,14 +79,26 @@
         
     }
 
-    &-territory-bg{
+    &-territory {
         position: absolute;
-        width: 330px;
+        top: 67px;
+        left: 448px;
+        width: 520px;
         height: 330px;
-        opacity: 0.82;
-        filter: blur(5px);
-        border-radius: 50%;  
-        background-color: #04366d;
-        z-index: 50;
+        background-image: url(../img/ellipse_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            display: block;
+            font-size: 30px;
+            float: left;            
+        }
     }
+
+    
 }
