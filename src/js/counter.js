@@ -10,7 +10,7 @@ $(document).ready(function () {
             $('.success-territory__num').css('opacity', '1');
             $('.success-territory__num').spincrement({
                     thousandSeparator: "",
-                    duration: 2500
+                    duration: 2000
                 });
             show = false;
         }

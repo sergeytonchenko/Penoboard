@@ -88,14 +88,14 @@
         background-image: url(../img/ellipse_1.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center center;        
+        background-position: center center; 
+        z-index: 20;       
 
         &__title {            
             font-size: 30px;
             float: left;
             margin-top: 111px; 
-            margin-bottom: 5px;
-            z-index: 20;           
+            margin-bottom: 5px;                       
         }
 
         &__subtitle {  
@@ -120,5 +120,30 @@
         }
     }
 
-    
+    &-market {
+        position: absolute;
+        display: flex;
+        top: 84px;
+        right: 448px;
+        width: 384px;
+        height: 232px;        
+        background-image: url(../img/ellipse_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 87%; 
+        z-index: 20; 
+    }
+
+    &-content {
+        position: absolute;
+        top: 267px;
+        left: 748px;
+        width: 602px;
+        height: 261px;        
+        background-image: url(../img/ellipse_3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center; 
+        z-index: 20;
+    }    
 }
