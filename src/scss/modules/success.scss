@@ -2,7 +2,7 @@
 
     color: #ffffff;
     text-transform: uppercase;    
-
+    overflow: hidden;
     &-wrap {
     position: relative;
     width: 100%;
@@ -94,7 +94,8 @@
             font-size: 30px;
             float: left;
             margin-top: 111px; 
-            margin-bottom: 5px;           
+            margin-bottom: 5px;
+            z-index: 20;           
         }
 
         &__subtitle {  
@@ -114,7 +115,8 @@
         }
 
         &__num {            
-            font-size: 72px; 
+            font-size: 72px;
+            opacity: 0; 
         }
     }
 
