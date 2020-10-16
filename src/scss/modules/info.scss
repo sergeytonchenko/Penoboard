@@ -56,25 +56,34 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 12px;
-    }
+    }    
 
+    &-select {
+        position: relative;
+        width: 40px;
+        cursor: pointer;
+        
+        span { 
+            position: absolute;
+            content: url("../img/down.png");
+            top: 25%;            
+            left: 0;
+            pointer-events: none;
+        }
+    }
+    
     &-lang {
         position: relative;
         appearance: none;
         font-size: 12px;
         font-weight: bold;
         color: #2c2783;
-        padding-left: 14px;
-
-        &::before {
-            position: absolute;
-            content: url("../img/down.png");
-            top: 0;
-            left: 0;
-        }
+        width: 100%;                
+        cursor: pointer;
+        padding: 0 10px;        
     }
-    
 
     &-social {
         display: flex;
@@ -118,5 +127,22 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &-footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;        
+    }
+
+    &-line {
+        width: 92%;
+        height: 1px;
+        background-color: #2c27835d; 
+        margin-top: 18px;       
+    }
+
+    &-btn {
+        cursor: pointer;
     }
 }

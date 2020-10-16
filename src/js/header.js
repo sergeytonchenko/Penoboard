@@ -13,4 +13,13 @@ $(window).scroll(function () {
     }
 
     
+
+    
 })
+//fullscreen
+const elem = document.querySelector('.info-btn');
+
+elem.onclick = function () {
+    document.documentElement.requestFullscreen();
+   }    
+

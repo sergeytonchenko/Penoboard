@@ -9,10 +9,12 @@ section
           a(href="").info-login__link Регистрация      
       .info-container--right
         .info-box
-          select(name="dropdown").info-lang
-            option(selected="selected" value="") RU
-            option(value="") EN
-            option(value="") UA
+          .info-select
+            select(name="dropdown").info-lang
+              option(selected="selected" value="") RU
+              option(value="") EN
+              option(value="") UA
+            span
           .info-social
             p.info-social__text Мы в социальных сетях
             .info-social__linkedin
@@ -26,4 +28,8 @@ section
           a.info-telephone__link(href="tel:+38(0552)314-403") &nbsp;314-403;
           a.info-telephone__link(href="fax:+38(0552)359-214") &nbsp;факс:+38(0552)359-214
         a(href="e-mail:info@penoboard.com").info__email e-mail:info@penoboard.com
+        .info-footer
+          .info-line
+          .info-btn
+            img(src="../img/zoom.png", alt="zoom")
     include slider
