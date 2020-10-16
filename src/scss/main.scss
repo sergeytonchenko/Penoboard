@@ -24,7 +24,8 @@ html, body {
 }
 
 button, button:active, button:focus,
-input, input:active, input:focus {
+input, input:active, input:focus,
+select, select:active, select:focus {
     outline: none;
     border: 0;
     font-family: 'EuropeExt Bold', arial;

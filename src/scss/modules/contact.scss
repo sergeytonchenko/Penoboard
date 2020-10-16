@@ -39,13 +39,20 @@
         &__link {
             font-size: 14px;
             color: #ffffff;
-        }
 
+            &:hover {
+                text-decoration: underline;
+            }
+        } 
     }
 
     &__email {
         font-size: 14px;
         color: #ffffff;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
     
 }

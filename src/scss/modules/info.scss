@@ -9,7 +9,7 @@
     &-container {
         display: flex;
         justify-content: space-between;
-        padding: 1rem 0;
+        padding: 23px 0 11px;
 
         &--left, &--right {
             display: flex;
@@ -19,8 +19,9 @@
 
         &--right {
             width: 100%;
-            max-width: 417px;            
-            margin-left: 100px;                      
+            max-width: 420px;            
+            margin-left: 100px;
+            align-items: flex-start;                      
         }
     }
 
@@ -55,28 +56,67 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-top: 12px;
+    }
 
-        & select {
-            position: relative;
-            appearance: none;
+    &-lang {
+        position: relative;
+        appearance: none;
+        font-size: 12px;
+        font-weight: bold;
+        color: #2c2783;
+        padding-left: 14px;
 
-            &::before {
-                position: absolute;
-                content: url("../img/arr_down.svg");
-                top: 0;
-                left: 0;
-            }
+        &::before {
+            position: absolute;
+            content: url("../img/down.png");
+            top: 0;
+            left: 0;
         }
     }
+    
 
     &-social {
-        display: flex;        
-    }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__text {
+            font-size: 12px;  
+            text-transform: uppercase;
+            color: #01983b;
+        }
 
-    &-telephone {
+        &__link {
+            font-size: 22px;
+            color: #01983b;
+        }
+
+        &__linkedin { 
+            margin-left: 9px;           
+    
+            &:hover a {
+                color: #0073b1;
+            }
+        }
+    
+        &__vk { 
+            margin-left: 6px;       
+    
+            &:hover a {
+                color:  #4c75a3;
+            }
+        }
+    }     
+
+    &-telephone__link, &__email {
         font-size: 16px; 
-        color: rgb(44, 39, 131);
+        color: #2c2783;
         font-weight: bold;
-        line-height: 1.125;
+        line-height: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
