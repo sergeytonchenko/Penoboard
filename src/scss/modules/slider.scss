@@ -1,3 +1,22 @@
+.swiper-container {
+    height: auto;
+}
+.swiper-container::after {
+    content: '';
+    background: url(../img/slider_shadow.png);
+    background-size: 100% auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    width: 120%;
+    height: 500px;
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
 .swiper-text {
     position: absolute;
     bottom: 36px;
@@ -36,8 +55,6 @@
 .clear {
     clear: both;
 }
-
-
 
 .swiper-pagination {
     text-align: start;
