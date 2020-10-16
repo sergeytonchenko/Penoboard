@@ -12,7 +12,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
-    },
+    },    
     optimization: {
         minimizer: [new OptimizeCssAssetsPlugin(), new UglifyJsPlugin()],
     },
@@ -70,13 +70,19 @@ module.exports = {
               {
                 loader: 'css-loader',
                 options: { sourceMap: true }
-              }, {
+              }, 
+              {
                 loader: 'postcss-loader',
                 options: { sourceMap: true, config: { path: 'src/postcss.config.js' } }
-              }, {
+              },
+              {
+                loader: 'resolve-url-loader',
+                options: { sourceMap: true }                
+              }, 
+              {
                 loader: 'sass-loader',
                 options: { sourceMap: true }
-              }
+              },               
             ]
           },
           {
@@ -84,11 +90,12 @@ module.exports = {
             loader: 'pug-loader'
           },
           {
-            test: /\.(png|jpg|gif|svg)$/,
+            test: /\.(png|jpg|gif|svg)$/,            
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-            }
+              outputPath: 'img',                            
+            },
           },
           {
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,

@@ -14,7 +14,7 @@ $(document).ready(function(){
             position: myLatLng,
             map,            
             icon: {
-                url: '../img/marker.png',
+                url: './img/marker.png',
                 labelOrigin: new google.maps.Point(30, -14),
             },                
             label: {                

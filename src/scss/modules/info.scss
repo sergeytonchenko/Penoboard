@@ -1,6 +1,6 @@
 .info  {
     height: 721px;
-    background-image: url(../img/header-info_bg.png);
+    background-image: url(../../img/header-info_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -67,7 +67,7 @@
         
         span { 
             position: absolute;
-            content: url("../img/down.png");
+            content: url("../../img/down.png");
             top: 25%;            
             left: 0;
             pointer-events: none;
