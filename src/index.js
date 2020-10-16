@@ -1,4 +1,3 @@
-import './css/style.css';
 import 'swiper/swiper-bundle.css';
 import './scss/main.scss';
 // import 'jquery-validation';
