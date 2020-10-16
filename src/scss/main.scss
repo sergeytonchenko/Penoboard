@@ -2,6 +2,7 @@
 @import './parsials/mixins';
 @import './modules/header';
 @import './modules/info';
+@import './modules/slider';
 @import './modules/success';
 @import './modules/certificate';
 @import './modules/contact';
@@ -9,10 +10,10 @@
 @import './media';
 
 @import url(//db.onlinewebfonts.com/c/d774b33db4359ae753c71d42afdf125a?family=EuropeExt+Web);
+@import url(//db.onlinewebfonts.com/c/125b16fc82d4edd4fba33e4d14bc9b53?family=EuropeExt);
 
 
-html, body {
-    // font-family: "EuropeExt Web";  
+html, body {     
     font-family: "Arial";  
     background-color: #f7f8f3;   
 }

@@ -1,4 +1,72 @@
-.swiper-container {
-    width: 600px;
-    height: 300px;
+.swiper-text {
+    position: absolute;
+    bottom: 36px;
+    left: 0;    
+    width: 683px;
+    height: 140px;  
+    background-color: #01983b6b;
+    font-family: "EuropeExt Web";
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 29px;
+    padding-right: 54px;
+    
+    &__title {
+        font-size: 30px;
+        line-height: 28px;
+
+        &--left {
+            float: left;
+            margin-top: 36px;
+        }
+
+        &--right {
+            float: right;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__subtitle {
+        float: left;
+        font-family: "EuropeExt";
+        font-size: 24px;
+    }    
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+.swiper-pagination {
+    text-align: start;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    left: 21px;
+    bottom: 14px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets
+.swiper-pagination-bullet {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.swiper-pagination-bullet {    
+    width: 32px;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 1;
+    border-radius: 0;
+
+}
+
+.swiper-pagination-bullet-active {
+    width: 32px;
+    height: 3px;
+    background-color: #00992f;
+    opacity: 1;
+    border-radius: 0;
 }

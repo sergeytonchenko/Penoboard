@@ -1,16 +1,21 @@
-import Swiper from 'swiper';
+import Swiper, { Autoplay, Pagination } from 'swiper';
 
-let mySwiper = new Swiper('.swiper-container', {    
+Swiper.use([Autoplay, Pagination]);
+
+let swiper = new Swiper('.swiper-container', { 
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     direction: 'horizontal',
     loop: true, 
     pagination: {
       el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+      type: 'bullets',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + '</span>';
+      },
+    }, 
   })
+
