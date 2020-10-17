@@ -87,14 +87,16 @@ module.exports = {
           },
           {
             test: /\.pug$/,
-            loader: 'pug-loader'
+            loader: 'pug-loader',
+            options: {
+              pretty: true
+            }
           },
           {
             test: /\.(png|jpg|gif|svg)$/,            
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'img',                            
+              name: 'img/[name].[ext]',                                                      
             },
           },
           {

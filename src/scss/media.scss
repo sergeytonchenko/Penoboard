@@ -1,78 +1,14 @@
 @media (max-width: 1199px) {
-    .toolbar__item {
-        padding-left: 25px;
-    }
-
-    .header__title {
-        font-size: 30px;
-    }
-
-    .header__subtitle {
-        font-size: 24px;        
-        margin-bottom: 40px;
-    }
-
-    .header__aside {
-        font-size: 20px;
-        bottom: 150px;
-
-        &::before {            
-            width: 70px;
-            left: -84px;            
-        }
-    }
-
-    .about__trust {
-        margin: 4rem auto;
-    }
-
-    .about__tabs::after {
-        width: 88%;
-    }
-
+    
 }
 @media (max-width: 991px) {
-
-    .about__item {
-        font-size: 24px;
+    .nav-list {
+        display: none;
     }
-
-    .about__tabs::after {
-        width: 91%;
-    }
-
-    .content {
-        margin-top: 0;
-    }
-
-    .content__text-wrap {
-        margin-bottom: 1.5rem;
-    }
-
-    .content-picture img {
-        width: 100%;
-    }
-
 }
 @media (max-width: 767px) {
     
 } 
 @media (max-width: 575px) {
-    .toolbar__item {
-        padding-left: 0;
-    }
-
-    .header-content {
-        padding: 10vh 0;
-        text-align: center;
-    }
-
-    .header__title, .header__subtitle {
-        line-height: 40px;
-    }
-
-    .header__btn {
-        width: 100%;
-        padding: 1.5rem 5rem 1.5rem 2rem;
-    }
+    
 }
