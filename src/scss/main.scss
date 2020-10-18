@@ -1,7 +1,9 @@
 @import './reset';
-@import './parsials/mixins';
+@import './parsials/_mixins';
+@import './parsials/_params';
 @import './modules/header';
 @import './modules/info';
+@import './modules/login-form';
 @import './modules/slider';
 @import './modules/success';
 @import './modules/certificate';
@@ -9,24 +11,27 @@
 @import './modules/footer';
 @import './media';
 
-@import url(//db.onlinewebfonts.com/c/d774b33db4359ae753c71d42afdf125a?family=EuropeExt+Web);
-@import url(//db.onlinewebfonts.com/c/125b16fc82d4edd4fba33e4d14bc9b53?family=EuropeExt);
-
-
 html, body {     
     font-family: "Arial";  
     background-color: #f7f8f3;   
 }
 
+.wrap {    
+    position: relative;
+    width: 100%;
+}
+.wrap-bg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2a2828ca;
+    z-index: 15;
+}
+
 .view-port {
     max-width: 979px;
     margin: 0 auto;
-}
-
-button, button:active, button:focus,
-input, input:active, input:focus,
-select, select:active, select:focus {
-    outline: none;
-    border: 0;
-    font-family: 'EuropeExt Bold', arial;
 }

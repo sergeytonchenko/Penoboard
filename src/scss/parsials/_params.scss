@@ -1,0 +1,21 @@
+@import url(//db.onlinewebfonts.com/c/d774b33db4359ae753c71d42afdf125a?family=EuropeExt+Web);
+@import url(//db.onlinewebfonts.com/c/125b16fc82d4edd4fba33e4d14bc9b53?family=EuropeExt);
+
+$color-secondary: #01983b;
+$font-secondary: "EuropeExt Web";
+$font-secondary-bold: "EuropeExt";
+
+input:focus {
+    border: 1px solid black;
+}
+
+button, select, input[type="submit"] {
+    cursor: pointer;
+}
+
+button, button:active, button:focus,
+select, select:active, select:focus,
+input {
+    outline: none;
+    border: 0;        
+}

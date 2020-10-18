@@ -26,16 +26,19 @@
     }
 
     &-login {
+        display: flex;
+        align-items: center;
         margin-top: 10px;
-        margin-right: 1rem;
-        float: right;
+        margin-right: 10px;
+        
 
         &__link, span {
             font-size: 12px;
             font-family: "Arial";
             color: #01983b;
-            text-transform: uppercase;
-            line-height: 2;
+            text-transform: uppercase;            
+            background-color: transparent;
+            padding: 0;
         }
 
         &__link:hover {
@@ -46,9 +49,9 @@
             text-shadow: 1px 0px 1px #023616a9;            
             color: #023616;
         }
-
+        
         span {
-            margin: 0 5px;
+            padding: 0 5px;
         }
     }
 

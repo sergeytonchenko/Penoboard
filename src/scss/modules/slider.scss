@@ -13,7 +13,7 @@
     width: 683px;
     height: 140px;  
     background-color: #01983b6b;
-    font-family: "EuropeExt Web";
+    font-family: $font-secondary;
     color: #ffffff;
     text-transform: uppercase;
     padding-left: 29px;
@@ -36,7 +36,7 @@
 
     &__subtitle {
         float: left;
-        font-family: "EuropeExt";
+        font-family: $font-secondary-bold;
         font-size: 24px;
     }    
 }

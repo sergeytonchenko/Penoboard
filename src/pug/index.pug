@@ -5,14 +5,16 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')    
     link(type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css' rel='stylesheet')
     title Penoboard
-  body    
-    include modules/header
-    main
-      include modules/info
-      include modules/success
-      include modules/certificate               
-    #map(style="height: 329px")
-    include modules/footer
+  body
+    .wrap
+      .wrap-bg    
+      include modules/header
+      main
+        include modules/info
+        include modules/success
+        include modules/certificate               
+      #map(style="height: 329px")
+      include modules/footer
     script(src='https://code.iconify.design/1/1.0.7/iconify.min.js')    
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
     script(src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js')
