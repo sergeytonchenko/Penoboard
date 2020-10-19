@@ -1,5 +1,5 @@
 .certif {
-    height: 764px;
+    height: auto;
     position: relative;
     text-align: center;
     background-color: #fff;    
@@ -10,11 +10,7 @@
     }
 
     &-title {
-        font-size: 30px;
-        font-family: "Arial";
-        color: #2c2783;
-        font-weight: bold;
-        text-transform: uppercase;
+        @include text-cerf(30px);        
         line-height: 0.533;
     }
 
@@ -23,7 +19,8 @@
         margin-bottom: 26px;
 
         a {
-            margin-right: 35px;
+            display: inline-block;
+            margin-right: 35px;            
         }
 
         a:last-child {
@@ -32,15 +29,11 @@
     }
 
     &-subtitle {
-        font-size: 24px;
-        font-family: "Arial";
-        color: #2c2783;
-        font-weight: bold;
-        text-transform: uppercase;
-        
-        &__img {
-            margin-top: 7px;
-            margin-bottom: 43px;  
-        }
+        @include text-cerf(24px); 
+    }
+
+    &-img-wrap {
+        padding-top: 7px;
+        padding-bottom: 208px;  
     }
 }

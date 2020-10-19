@@ -4,6 +4,10 @@
         padding-top: 30px;        
     }
 
+    .contact {
+        background-position-y: 150%;
+    }
+
     
 }
 @media (max-width: 991px) {
@@ -80,6 +84,22 @@
             font-size: 30px;
         }
     }
+
+    .certif {
+
+        &-box {
+            margin: 10px 0 10px;
+        }
+
+        &-box a,
+        &-box a:last-child {                
+            margin: 15px;
+        }
+    }
+
+    .contact {
+        background-position-y: 120%;
+    }
 }
 @media (max-width: 767px) {
 
@@ -93,13 +113,14 @@
         &-market, &-content  {            
             display: flex;
             flex-direction: column;
-            width: 100%;            
+            width: 100%;
+            height: auto;            
         }
 
         &-title-wrap, &-territory,
         &-market, &-content {
             position: static;
-            background: #051a33 url(../img/pattern.png) repeat;
+            background: #051a335e url(../img/pattern.png) repeat;
             margin: 0;
             padding: 10px 0;
             height: auto;
@@ -131,15 +152,12 @@
     .success {
 
         &-wrap {
-            height: 400px;
+            height: 430px;
         }
 
-        &-title-wrap {
-            top: 30px;
-        }
-        
         &__title {
             font-size: 24px;
+            padding: 15px 0;
         }
     
         &__text {
@@ -164,28 +182,67 @@
         }
     }
     
-    .certif-logo img {
-        width: 100%;
-    }
+    .certif {
 
-    .certif-title {
-        font-size: 16px;
-    }
-    .footer__title, .footer__banner {
-        width: 100%;
-    }
+        &-logo {
+            padding: 15px 10px 0;
 
-    .footer-banner-title {
-        margin-top: 15px;
-        flex-wrap: wrap;
+            img {
+                width: 100%;                
+            }
+        }            
+    
+        &-title {
+            font-size: 16px;
+        }
         
-        p:last-child {
-            display: none;
+        &-box {
+            margin: 10px 0 10px;
+        }
+
+        &-box a,
+        &-box a:last-child {                
+            margin: 5px;
         }
     }
 
-    .footer-banner-title,
-    .footer-banner__link {        
-        font-size: 12px;        
+    .contact {        
+        height: auto;
+        background-position-y: 115%;
+
+        &-wrap {
+            padding: 20px 5px;
+        }
+        
+        &-adress {
+            font-size: 14px;
+            line-height: 15px;
+        }
+
+        &-phone__link {
+            line-height: 20px;
+        }
     }
+
+    .footer {
+        padding: 0 10px;
+
+        &__title, &__banner {
+            width: 100%;
+        }
+    
+        &-banner-title {
+            margin-top: 15px;
+            flex-wrap: wrap;
+            
+            p:last-child {
+                display: none;
+            }
+        }
+    
+        &-banner-title,
+        &-banner__link {        
+            font-size: 12px;        
+        }
+    }    
 }

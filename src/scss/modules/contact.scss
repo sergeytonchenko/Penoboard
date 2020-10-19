@@ -1,16 +1,22 @@
 .contact {
     position: absolute;
-    bottom: -40px;
+    bottom: -43px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
     height: 207px;
     width: 100%;
     max-width: 1232px;
-    
-    background-image: url(../../img/contact_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color:#01983b ;
+    background: url(../../img/contact_bg2.png) no-repeat,
+        url(../../img/contact_bg.png) repeat;
+    background-size: contain, auto;
+    // background-position: bottom, 0 0;
+    background-position-y: 180%;
+    box-shadow: 0 3px 5px rgba(0,0,0,.5),
+        inset 0 3px 0 hsla(0,0%,100%,.2);    
     text-align: center;
     color: #ffffff;
 

@@ -1,15 +1,7 @@
-@mixin text-header ($size, $spacing) {
-    color: #fff;
+@mixin text-cerf ($size) {
+    color: #2c2783;
     text-transform: uppercase;
     font-size: $size;
-    font-weight: 400;
-    letter-spacing: $spacing;
-}
-
-@mixin text-about ($size, $spacing) {
-    color: #000;
-    text-transform: uppercase;
-    font-size: $size;
-    font-weight: 400;
-    letter-spacing: $spacing;
+    font-weight: bold;
+    
 }
