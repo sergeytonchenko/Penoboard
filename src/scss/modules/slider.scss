@@ -1,10 +1,12 @@
-.slider-wrap {
-    height: 80%;
+.slider-wrap {    
     background-image: url('../../img/slider_shadow.png');
-    background-position-x: center;
-    background-position-y: 16px;
+    background-position: bottom -19px center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
+    padding-bottom: 85px;
+}
+.swiper-slide img {
+    display: block;
 }
 .swiper-text {
     position: absolute;
