@@ -8,26 +8,29 @@ header {
     background: #01983b url(../../img/pattern.png) repeat;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5),
                 inset 0 -3px 0 rgba(255, 255, 255, 0.2); 
-    
+    height: 76px;
+    transition: height .3s ease;
 }
 
 .nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
 
     &-list {
         display: flex;
-        justify-content: space-around;
-        padding: 1.5rem 1rem;
-        transition: all .2s ease;
+        justify-content: space-between;               
     }
 
     &-item {
-        border-top: 1px solid transparent;
-        border-bottom: 1px solid transparent;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
         padding: 5px 0;
 
         &:hover {
-            border-top: 1px solid #fff;
-            border-bottom: 1px solid #fff;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
         }
         
         &:active {

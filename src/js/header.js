@@ -2,13 +2,13 @@ $(window).scroll(function () {
     const scroll = $(window).scrollTop();    
 
     if (scroll > 0) {
-        $(".nav-list").css({
-            padding: "0.5rem 1rem"         
+        $(".header").css({
+            height: "50px"         
         })
     }
     else {
-        $(".nav-list").css({
-            padding: "1.5rem 1rem"         
+        $(".header").css({
+            height: "76px"         
         })
     }
 
