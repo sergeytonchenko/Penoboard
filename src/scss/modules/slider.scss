@@ -9,8 +9,9 @@
 .swiper-text {
     position: absolute;
     bottom: 36px;
-    left: 0;    
-    width: 683px;
+    left: 0;
+    width: 100%;    
+    max-width: 683px;
     height: 140px;  
     background-color: #01983b6b;
     font-family: $font-secondary;
