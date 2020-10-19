@@ -93,6 +93,13 @@ module.exports = {
             }
           },
           {
+            test: /\.php$/,
+            loaders: [
+              'html-minify',
+              'php-loader'
+            ]
+          },
+          {
             test: /\.(png|jpg|gif|svg)$/,            
             loader: 'file-loader',
             options: {

@@ -15,4 +15,13 @@ $(document).ready(function(){
         wrap.style.display = "none";    
     })
 
+    $('#login').submit(function(){    
+        $.post(
+            'post.php', 
+             $("#login").serialize(),       
+        )
+
+        return false;
+    });
+
 })

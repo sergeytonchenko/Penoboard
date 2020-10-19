@@ -79,20 +79,36 @@
         
     }
 
-    &-title {
-        position: absolute;
-        font-size: 40px;
-        font-weight: bold;        
+    &-title-wrap {
+        position: absolute; 
+        width: 100%;
         top: 63px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 3;
     }
 
+    &__title {        
+        font-size: 40px;
+        font-weight: bold; 
+        text-align: center;
+    }
+
+    &-box {
+        max-width: 1013px;
+        height: 561px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: 30px;
+    }
+
     &-territory {
         position: absolute;
         top: 67px;
-        left: 448px;
+        left: 0;             
         width: 500px;
         height: 330px;
         background-image: url(../../img/ellipse_1.png);
@@ -101,16 +117,14 @@
         background-position: center center; 
         z-index: 2;       
 
-        &__title {            
-            font-size: 30px;
+        &__title {
             float: left;
             margin-top: 111px; 
             margin-bottom: 5px;                       
         }
 
-        &__subtitle {  
-            position: relative;          
-            font-size: 30px;
+        &-subtitle {  
+            position: relative;
             float: right;
             font-weight: bold;
             padding-right: 23px; 
@@ -138,7 +152,7 @@
         display: flex;
         align-items: flex-end;
         top: 84px;
-        right: 448px;
+        right: 0;
         width: 384px;                
         background-image: url(../../img/ellipse_2.png);
         background-repeat: no-repeat;
@@ -146,11 +160,7 @@
         background-position-x: 87%; 
         z-index: 2;
         padding-top: 54px;
-        padding-bottom: 55px;        
-        
-        &__title {
-            font-size: 30px;            
-        }
+        padding-bottom: 55px;
 
         &__num {
             font-size: 163px;
@@ -170,7 +180,7 @@
     &-content {
         position: absolute;
         top: 261px;
-        left: 705px;
+        left: 26%;
         width: 593px;
         height: 261px;        
         background-image: url(../../img/ellipse_3.png);
@@ -179,16 +189,14 @@
         background-position-x: 61%; 
         z-index: 2;
 
-        &__title {            
-            font-size: 30px;
+        &__title { 
             float: left;
             margin-top: 107px; 
             margin-bottom: 2px;                       
         }
 
-        &__subtitle {  
-            position: relative;          
-            font-size: 30px;
+        &-subtitle {  
+            position: relative;
             float: right;
             font-weight: bold;
             padding-right: 23px; 

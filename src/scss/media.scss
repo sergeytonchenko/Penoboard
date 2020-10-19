@@ -1,14 +1,191 @@
-@media (max-width: 1199px) {
+@media (max-width: 1199px) { 
+    
+    .certif-logo {
+        padding-top: 30px;        
+    }
+
     
 }
 @media (max-width: 991px) {
     .nav-list {
         display: none;
     }
+
+    .success {
+
+        &-wrap {
+            height: 500px;
+        }
+
+        &-title-wrap {
+            top: 40px;
+        }
+    
+        &__title {
+            font-size: 35px;
+        }
+    
+        &__text {
+            font-size: 25px;
+        }
+    
+        &-territory {
+            width: 400px;
+            height: 297px;
+            left: 1%;
+    
+            &__title {            
+                margin-top: 80px;
+            }
+    
+            &-subtitle {
+                padding-right: 16px;
+            }
+        }
+
+        &-market {
+            top: 84px;
+            right: 1%;
+            width: 350px;
+            padding: 35px 0;
+            justify-content: flex-end;
+    
+            &__num {
+                font-size: 135px;
+                line-height: 0.75;     
+            }
+    
+            &__text {
+                font-size: 55px;                
+            }
+        }
+
+        &-content {            
+            width: 460px;
+            height: 202px;
+    
+            &__title { 
+                margin-top: 80px; 
+                margin-bottom: 2px;                       
+            }
+    
+            &__subtitle {
+                padding-right: 16px; 
+            } 
+        }
+
+        &-content-subtitle::after,
+        &-territory-subtitle::after {
+            top: 10px;
+            font-size: 30px;
+        }
+    }
 }
 @media (max-width: 767px) {
+
+    .success {
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &-box, &-territory,
+        &-market, &-content  {            
+            display: flex;
+            flex-direction: column;
+            width: 100%;            
+        }
+
+        &-title-wrap, &-territory,
+        &-market, &-content {
+            position: static;
+            background: #051a33 url(../img/pattern.png) repeat;
+            margin: 0;
+            padding: 10px 0;
+            height: auto;
+            border-top: 1px solid #619bdf;
+            transform: none;
+            text-align: center;
+            align-items: center;
+            
+        }
+
+        &-territory {
+
+            &__title {
+                margin: 0;           
+            }
+        }
+
+        &-content {
+    
+            &__title { 
+                margin: 0;                      
+            }
+        }
+    }
     
 } 
 @media (max-width: 575px) {
+
+    .success {
+
+        &-wrap {
+            height: 400px;
+        }
+
+        &-title-wrap {
+            top: 30px;
+        }
+        
+        &__title {
+            font-size: 24px;
+        }
     
+        &__text {
+            font-size: 18px;
+        }
+
+        &-content-subtitle::after,
+        &-territory-subtitle::after {
+            top: 20px;
+            font-size: 18px;
+        }
+
+        &-territory__num, &-content__num,
+        &-market__num {
+            font-size: 65px;
+            line-height: 1;
+        }
+
+        &-market__text {
+            font-size: 40px;
+            margin-left: 20px;
+        }
+    }
+    
+    .certif-logo img {
+        width: 100%;
+    }
+
+    .certif-title {
+        font-size: 16px;
+    }
+    .footer__title, .footer__banner {
+        width: 100%;
+    }
+
+    .footer-banner-title {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        
+        p:last-child {
+            display: none;
+        }
+    }
+
+    .footer-banner-title,
+    .footer-banner__link {        
+        font-size: 12px;        
+    }
 }
