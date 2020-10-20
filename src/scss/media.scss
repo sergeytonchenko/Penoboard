@@ -24,8 +24,13 @@
     }
 
     .info {
-        width: calc(100% - 20px);
-        padding: 0 10px;
+        width: 100%;
+
+        &-container {
+            width: calc(100% - 20px);
+            padding: 0 10px;
+        }
+        
 
         &-container--left {
             width: 40%;
