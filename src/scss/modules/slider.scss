@@ -15,15 +15,12 @@
     width: 100%;    
     max-width: 683px;
     height: 140px;  
-    background-color: #01983b6b;
-    font-family: $font-secondary;
-    color: #ffffff;
-    text-transform: uppercase;
+    background-color: #01983b6b;   
     padding-left: 29px;
     padding-right: 54px;
     
     &__title {
-        font-size: 30px;
+        @include text-slider (30px, $font-secondary);
         line-height: 28px;
 
         &--left {
@@ -39,8 +36,7 @@
 
     &__subtitle {
         float: left;
-        font-family: $font-secondary-bold;
-        font-size: 24px;
+        @include text-slider (24px, $font-secondary-bold);
     }    
 }
 

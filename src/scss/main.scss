@@ -1,6 +1,6 @@
 @import './reset';
-@import './parsials/_mixins';
 @import './parsials/_params';
+@import './parsials/_mixins';
 @import './modules/header';
 @import './modules/aside-menu';
 @import './modules/info';
@@ -12,8 +12,7 @@
 @import './modules/footer';
 @import './media';
 
-html, body {     
-    font-family: "Arial";  
+html, body {
     background-color: #f7f8f3;   
 }
 

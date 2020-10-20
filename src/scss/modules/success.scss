@@ -1,7 +1,4 @@
-.success {
-
-    color: #ffffff;
-    text-transform: uppercase;    
+.success {        
     overflow: hidden;
     &-wrap {
     position: relative;
@@ -13,70 +10,36 @@
     }
 
     &-penoboard {
-        position: absolute;        
-        left: 0;
+        @include success-parallax 
+            (url(../../img/penoboard.png), left, bottom, 187px);
         bottom: -5%;
-        width: 100%;
-        height: 187px;
-        background-image: url(../../img/penoboard.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: center center;
-        z-index: 1;        
+        background-position: center center;                
     }
 
     &-balls--1 {
-        position: absolute;
-        left: 0;
-        bottom: -100%;
-        width: 100%;
-        height: 961px;
-        background-image: url(../../img/balls1.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: left center;
-        z-index: 1;
+        @include success-parallax
+            (url(../../img/balls1.png), left, bottom, 961px); 
+        bottom: -100%;        
+        background-position: left center;        
     }
 
     &-balls--2 {
-        position: absolute;
-        right: 0;
-        bottom: -100%;
-        width: 100%;
-        height: 961px;
-        background-image: url(../../img/balls2.png);
-        background-repeat: no-repeat;
-        background-size: auto;
+        @include success-parallax 
+            (url(../../img/balls2.png), right, bottom, 961px);
+        bottom: -100%;        
         background-position: right bottom;
-        z-index: 1;
-        
     }
 
     &-balls--3 {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 560px;
-        background-image: url(../../img/balls3.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: left center;
-        z-index: 1;
+        @include success-parallax 
+            (url(../../img/balls3.png), left, top, 560px);               
+        background-position: left center;        
     }
 
     &-balls--4 {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-        height: 560px;
-        background-image: url(../../img/balls4.png);
-        background-repeat: no-repeat;
-        background-size: auto;
+        @include success-parallax 
+            (url(../../img/balls4.png), right, top, 560px);              
         background-position: right center;
-        z-index: 1;
-        
     }
 
     &-title-wrap {
@@ -88,9 +51,8 @@
         z-index: 3;
     }
 
-    &__title {        
-        font-size: 40px;
-        font-weight: bold; 
+    &__title {  
+        @include text-main (40px, 700);
         text-align: center;
     }
 
@@ -102,7 +64,7 @@
     }
 
     &__text {
-        font-size: 30px;
+        @include text-main (30px, 400);
     }
 
     &-territory {
@@ -125,8 +87,7 @@
 
         &-subtitle {  
             position: relative;
-            float: right;
-            font-weight: bold;
+            float: right;            
             padding-right: 23px; 
             
             &::after {
@@ -134,12 +95,12 @@
                 position: absolute;                
                 top: 0;
                 right: 0;
-                font-size: 43px;
+                @include text-main (43px, 400);
             }
         }
 
         &__num {            
-            font-size: 72px;            
+            @include text-main (72px, 700);            
         }
     }
 
@@ -163,17 +124,15 @@
         padding-bottom: 55px;
 
         &__num {
-            font-size: 163px;
+            @include text-main (163px, 700);
             line-height: 0.75;
-            font-weight: bold;
             letter-spacing: -10px;                        
         }
 
         &__text {
-            font-size: 81px;
+            @include text-main (81px, 700);
             text-transform: lowercase;
-            line-height: 0.81;
-            font-weight: bold;
+            line-height: 0.81;            
         }
     }
 
@@ -197,8 +156,7 @@
 
         &-subtitle {  
             position: relative;
-            float: right;
-            font-weight: bold;
+            float: right;            
             padding-right: 23px; 
             
             &::after {
@@ -206,12 +164,12 @@
                 position: absolute;                
                 top: 0;
                 right: 0;
-                font-size: 43px;
+                @include text-main (43px, 400);
             }
         }
 
         &__num {            
-            font-size: 72px;
+            @include text-main (72px, 700);
             opacity: 0;            
         }
     }    
