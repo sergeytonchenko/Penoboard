@@ -2,6 +2,19 @@ aside.aside-menu
   .aside-logo-wrap
     img.aside-logo_t(src="../img/nav_logotext.png", alt="")
     img.aside-logo_l(src="../img/nav_logo.png", alt="")
+  .aside-login
+          button.aside-login__link.sign-in Вход
+          span /
+          button.aside-login__link.reg-in Регистрация
+  .aside-select
+            select(name="dropdown").aside-lang
+              option(selected="selected" value="")
+                a(href="#ru") RU
+              option(value="")
+                a(href="#en") EN
+              option(value="")
+                a(href="#ua") UA
+            span
   a#mmenu-icon.mburger.mburger--collapse(href="#my-menu")
     b
     b
@@ -9,23 +22,23 @@ aside.aside-menu
   nav#my-menu
     ul.aside-list
         li.aside-item
-            a.aside-link(href="/") Главная
+            a.aside-link(href="#Главная") Главная
         li.aside-item
-            a.aside-link(href="/О компании") О компании
+            a.aside-link(href="#О компании") О компании
         li.aside-item
-            a.aside-link(href="/Вакансии") Вакансии
+            a.aside-link(href="#Вакансии") Вакансии
         li.aside-item
-            span Продукция
-            ul.product-list
-              li.product-item
-                a.product__link(href="/Продукция/Ссылка 1") Ссылка 1
-              li.product-item
-                a.product__link(href="/Продукция/Ссылка 2") Ссылка 2
-              li.product-item
-                a.product__link(href="/Продукция/Ссылка 3") Ссылка 3
+          span Продукция            
+          ul.product-list
+            li.product-item
+              a.product__link(href="#Продукция/Ссылка 1") Ссылка 1
+            li.product-item
+              a.product__link(href="#Продукция/Ссылка 2") Ссылка 2
+            li.product-item
+              a.product__link(href="#Продукция/Ссылка 3") Ссылка 3
         li.aside-item
-            a.aside-link(href="/Новости") Новости
+            a.aside-link(href="#Новости") Новости
         li.aside-item
-            a.aside-link(href="/Статьи") Статьи
+            a.aside-link(href="#Статьи") Статьи
         li.aside-item
-            a.aside-link(href="/Контакты") Контакты
+            a.aside-link(href="#Контакты") Контакты

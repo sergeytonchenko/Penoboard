@@ -80,6 +80,10 @@
             }
         }
 
+        &-content-subtitle {            
+            padding-right: 16px;
+        }
+
         &-market {
             top: 84px;
             right: 1%;
@@ -168,6 +172,10 @@
         &-social__link {
             font-size: 35px;
         }
+
+        &-telephone {
+            justify-content: center;
+        }
     }
 
     .swiper {
@@ -242,11 +250,12 @@
         display: none;
     }
 
-    .aside-logo_l {
+    .aside-logo_l, .aside-login,
+    .aside-select {
         display: block;
     }
 
-    .info-container {
+    .info-login, .info-select {
         display: none;
     }
 

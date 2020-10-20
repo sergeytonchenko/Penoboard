@@ -9,7 +9,7 @@ $(document).ready(function() {
             }
          ],
          navbar: {
-            "title": "Меню"
+            "title": "<div class='mmenu-title'>peno<span>board</span>"
          },
         extensions: ["theme-white", "position-right", "pagedim-black"],        
     });

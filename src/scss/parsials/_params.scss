@@ -3,6 +3,7 @@
 
 $color-primary: #ffffff;
 $color-secondary: #01983b;
+$color-third: #2c2783;
 $font-primary: "Arial";
 $font-secondary: "EuropeExt Web";
 $font-secondary-bold: "EuropeExt";
@@ -20,5 +21,6 @@ select, select:active, select:focus,
 input {
     outline: none;
     border: 0;
-    appearance: none;        
+    appearance: none;
+    background-color: transparent;        
 }

@@ -1,6 +1,6 @@
 @mixin text-cerf ($size) {
     font-family: $font-primary;
-    color: #2c2783;
+    color: $color-third;
     text-transform: uppercase;
     font-size: $size;
     font-weight: bold;    
@@ -8,7 +8,7 @@
 
 @mixin text-main ($size, $font-weight) {
     font-family: $font-primary;
-    color: #ffffff;;
+    color: $color-primary;
     text-transform: uppercase;
     font-size: $size;
     font-weight: $font-weight;    
@@ -16,7 +16,7 @@
 
 @mixin text-slider ($size, $font-family) {
     font-family: $font-family;
-    color: #ffffff;;
+    color: $color-primary;
     text-transform: uppercase;
     font-size: $size;        
 }

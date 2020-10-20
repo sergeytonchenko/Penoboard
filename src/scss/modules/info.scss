@@ -118,18 +118,25 @@
                 color:  #4c75a3;
             }
         }
-    }     
+    }
+    
+    &-telephone {
+        display: flex;
+        flex-wrap: wrap;
 
-    &-telephone__link, &__email {
-        font-size: 16px; 
-        color: #2c2783;
-        font-weight: bold;
-        line-height: 20px;
-
-        &:hover {
-            text-decoration: underline;
+        &__link, &__email {
+            font-size: 16px; 
+            color: #2c2783;
+            font-weight: bold;
+            line-height: 20px;
+    
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
+
+    
 
     &-footer {
         display: flex;
