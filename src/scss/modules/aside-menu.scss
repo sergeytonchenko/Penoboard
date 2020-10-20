@@ -1,17 +1,23 @@
 .aside-menu {
     display: none;
-    position: fixed;
-    left: -300px;
-    background-color: #2dac5d6c;
-    transition: left .3s ease;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     width: 100%;
-    max-width: 300px;
 }
 
-.aside-burger {
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 30px;
-    right: -50px;
+.aside-logo_t {
+    width: 300px;
+}
+
+.aside-logo_l {
+    width: 28px;
+}
+
+.aside-logo_t, .aside-logo_l {
+    display: none;
+}
+
+.mburger {
+    color: $color-primary;
 }

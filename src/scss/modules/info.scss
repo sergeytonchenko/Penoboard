@@ -144,7 +144,11 @@
         margin-top: 18px;       
     }
 
-    &-btn {
+    &-btn {        
         cursor: pointer;
+
+        &:hover .cls-1 {
+            fill: #6864aa; 
+        }
     }
 }
