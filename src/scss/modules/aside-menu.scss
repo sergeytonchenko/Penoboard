@@ -19,7 +19,7 @@
 }
 
 .aside-login {
-    display: none;
+    display: none;    
     &__link {
         @include text-main (13px, 700);
     }

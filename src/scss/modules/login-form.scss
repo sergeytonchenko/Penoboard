@@ -1,19 +1,24 @@
-.form-login {
+.form-login, .form-reg {
     display: none;
     position: fixed;
-    top: 30vh;
+    top: 20vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
+    width: calc(100% - 10px);
+    max-width: 500px;
     height: 100%;
     max-height: 350px;
     background-color: #f0e7d9;
     z-index: 20;
     color: $color-secondary;
-    font-family: $font-secondary;
+    font-family: $font-secondary;        
 }
 
-.form-close {
+.form-reg {
+    max-height: 450px;
+}
+
+.form-close, .reg-close {
     position: absolute;
     top: 10px;
     right: 10px;    
@@ -31,9 +36,15 @@
     justify-content: space-between;
     padding: 50px 40px 40px;
     height: calc(100% - 90px);
+    width: 70%;    
     
     input {
         padding: 10px;
+        background-color: #fff;
+    }
+
+    label {        
+        color: tomato;
     }
 }
 
@@ -41,12 +52,24 @@
     font-size: 24px;    
 }
 
-.form__submit {
-    background-color: #0a85f8;
+.success {
+    border: 1px solid green;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.form__submit, .reg__submit {
+    background-color: #0a85f8 !important;
     color: #ffffff;
-    width: 30%;
+    width: 40%;
     
     &:hover {
         box-shadow: 0 1px 2px #064c8d;
     }
+}
+
+.reg__submit {
+    width: 70%;
 }

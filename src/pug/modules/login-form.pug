@@ -4,7 +4,22 @@
   form#login.form-block(action="" method="post")
     p.form__title Войти в личный кабинет
     p Ваш e-mail
-    input(type="email", name="arr[email]" placeholder="user@mail.com")
+    input(type="email", id="user_email" name="user_email" placeholder="user@mail.com")
     p Пароль
-    input(type="password", name="arr[password]" placeholder="********")
+    input(type="password", id="psword" name="psword" placeholder="********")
     input.form__submit(type="submit", value="Войти")
+
+.form-reg
+  .reg-close
+    span.iconify(data-icon='carbon:close-outline' data-inline='false')
+  form#reg.form-block(action="" method="post")
+    p.form__title Регистрация
+    p Введите логин
+    input(type="text", name="arr[name]" placeholder="user")
+    p Введите e-mail
+    input(type="email", name="arr[email]" placeholder="user@mail.com")
+    p Введите пароль
+    input(type="password", name="arr[password]" placeholder="********")
+    p Подтвердите пароль
+    input(type="password", name="arr[conf_password]" placeholder="********")
+    input.reg__submit(type="submit", value="Зарегистрироваться")

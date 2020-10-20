@@ -10,6 +10,7 @@ import 'jquery-validation';
 import './js/header';
 import './js/mmenu';
 import './js/formLogin';
+import './js/formReg';
 import './js/slider';
 import './js/parralax';
 import './js/counter';
