@@ -40,28 +40,19 @@ $(document).ready(function(){
             },
             psword: {
               required: true,
-              minlength: 8,
+              minlength: 6,
             }
           },
           messages: {            
-            user_email: 'Enter a valid email',
-            psword: 'Password must be atleast 8 characterslong'            
-          },          
-          invalidHandler: function(form, validator) {
-            
-            var errors = validator.numberOfInvalids();
-            if (errors) {
-              var message = errors == 1
-                ? 'You missed 1 field. It has been highlighted'
-                : 'You missed ' + errors + ' fields. They have been highlighted';
-              $("div.error span").html(message);
-              $("div.error").show();
-            } else {
-              $("div.error").hide();
-            }
-          },                
-          submitHandler: function() {
-           alert('Вы успешно вошли');
+            user_email: 'Введите корректный email',
+            psword: 'Пароль должен содержать не менее 6 символов'            
+          },            
+          submitHandler: function(form) {
+            $.post('post.php', $(form).serialize(), function (data, textStatus) {
+                form.submit();
+                alert(data.inf);
+            },'json');
+           
           }       
       });
 
