@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-    const regIn = document.querySelector(".reg-in");
-    const regAside = document.querySelector(".reg-side");
-    const reg = document.querySelector(".form-reg");
-    const close = document.querySelector(".reg-close");
-    const wrap = document.querySelector(".wrap-bg");
+    let regIn = document.querySelector(".reg-in");
+    let regAside = document.querySelector(".reg-side");
+    let reg = document.querySelector(".form-reg");
+    let close = document.querySelector(".reg-close");
+    let wrap = document.querySelector(".wrap-bg");
 
     regAside.addEventListener("click" , () => {
         reg.style.display = "flex";
@@ -21,13 +21,39 @@ $(document).ready(function(){
         wrap.style.display = "none";    
     })
 
-    $('#reg').submit(function(){    
-        $.post(
-            'post.php', 
-             $("#login").serialize(),       
-        )
-
-        return false;
+    $('#reg').validate({
+        debug: false,
+        validClass: "success",                    
+        rules: { 
+            name: {
+                required: true,
+                minlength: 4
+            },                       
+            user_email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true,
+                minlength: 6
+            },
+            conf_password: {
+                required: true, 
+                equalTo: "#password",
+                minlength: 6                
+           }
+        },
+        messages: {
+            name: 'Логин должен содержать не менее 4 символов',              
+            user_email: 'Введите корректный email',
+            psword: 'Пароль должен содержать не менее 6 символов',
+            conf_password: 'Введите правильный пароль'            
+        },
+        success: "valid",                
+        submitHandler: function() {              
+            alert ("Вы успешно зарегистрировались"); 
+            reg.style.display = "none";
+            wrap.style.display = "none";    
+        }
     });
-
 })

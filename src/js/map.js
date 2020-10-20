@@ -14,9 +14,6 @@ function initMap() {
             markerCenter = { lat: 46.669726, lng: 32.689785 };
         }
 
-        console.log(screenWidth);
-        console.log(zoom);
-
         let options = {
             center,
             zoom        

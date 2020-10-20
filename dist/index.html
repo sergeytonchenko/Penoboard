@@ -19,7 +19,7 @@
   <div class="header">
     <nav class="header-nav nav">     
 <aside class="aside-menu">
-  <div class="aside-logo-wrap"><img class="aside-logo_t" src="../img/nav_logotext.png" alt=""><img class="aside-logo_l" src="../img/nav_logo.png" alt=""></div>
+  <div class="aside-logo-wrap"><img class="aside-logo_t" src="./img/nav_logotext.png" alt=""><img class="aside-logo_l" src="./img/nav_logo.png" alt=""></div>
   <div class="aside-login">
     <button class="aside-login__link sign-side">Вход</button><span>/</span>
     <button class="aside-login__link reg-side">Регистрация</button>
@@ -80,7 +80,7 @@
     <input type="email" id="user_email" name="user_email" placeholder="user@mail.com">
     <p>Пароль</p>
     <input type="password" id="psword" name="psword" placeholder="********">
-    <input class="form__submit" type="submit" value="Войти">
+    <input class="form__submit submit" type="submit" value="Войти">
   </form>
 </div>
 <div class="form-reg">
@@ -88,14 +88,14 @@
   <form class="form-block" id="reg" action="" method="post">
     <p class="form__title">Регистрация</p>
     <p>Введите логин</p>
-    <input type="text" name="arr[name]" placeholder="user">
+    <input type="text" name="name" placeholder="user">
     <p>Введите e-mail</p>
-    <input type="email" name="arr[email]" placeholder="user@mail.com">
+    <input type="email" name="user_email" placeholder="user@mail.com">
     <p>Введите пароль</p>
-    <input type="password" name="arr[password]" placeholder="********">
+    <input type="password" id="password" name="password" placeholder="********">
     <p>Подтвердите пароль</p>
-    <input type="password" name="arr[conf_password]" placeholder="********">
-    <input class="reg__submit" type="submit" value="Зарегистрироваться">
+    <input type="password" name="conf_password" placeholder="********">
+    <input class="reg__submit submit" type="submit" value="Зарегистрироваться">
   </form>
 </div>
       <div class="info-container--left"><img src="./img/header_logo.png" alt="header_logo">

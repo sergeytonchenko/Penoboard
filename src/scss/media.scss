@@ -145,6 +145,10 @@
 }
 @media (max-width: 767px) {
 
+    .form-login, .form-reg {        
+        top: 10vh;
+    }
+
     .info {
         &-container {
             display: flex;

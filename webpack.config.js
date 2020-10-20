@@ -2,9 +2,9 @@ const path = require ('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -14,7 +14,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },    
     optimization: {
-        minimizer: [new OptimizeCssAssetsPlugin(), new UglifyJsPlugin()],
+        minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
     },
     devServer: {
       contentBase: path.join(__dirname, 'dist'),
@@ -91,14 +91,7 @@ module.exports = {
             options: {
               pretty: true
             }
-          },
-          {
-            test: /\.php$/,
-            loaders: [
-              'html-minify',
-              'php-loader'
-            ]
-          },
+          },          
           {
             test: /\.(png|jpg|gif|svg)$/,            
             loader: 'file-loader',
