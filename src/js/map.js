@@ -19,9 +19,14 @@ function initMap() {
             zoom        
         }   
     
-        map = new google.maps.Map(root, options); 
+        map = new google.maps.Map(root, options),
+        contentString = 'Антоновка, ул. Луговая 5б',
+        infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 500
+        }); 
     
-        new google.maps.Marker({
+        let marker = new google.maps.Marker({
             position: markerCenter,
             map,            
             icon: {
@@ -34,7 +39,11 @@ function initMap() {
                 fontWeight: 'bold',
                 fontSize: '12px'               
             },            
-        });    
+        });        
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
 };  
 
 initMap();

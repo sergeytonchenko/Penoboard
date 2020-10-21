@@ -10,16 +10,13 @@ $(window).scroll(function () {
         $(".header").css({
             height: "76px"         
         })
-    }
-
-    
-
-    
+    } 
 })
+
 //fullscreen
 const elem = document.querySelector('.info-btn');
 
 elem.onclick = function () {
     document.documentElement.requestFullscreen();
-   }    
+}    
 
