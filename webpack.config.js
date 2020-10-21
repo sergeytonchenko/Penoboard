@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
@@ -27,6 +28,7 @@ module.exports = {
           filename: 'index.html'
           
         }),
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'style.css'
         }),

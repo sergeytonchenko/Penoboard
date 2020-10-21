@@ -31,7 +31,7 @@ function initMap() {
             map,            
             icon: {
                 url: './img/marker.png',
-                labelOrigin: new google.maps.Point(30, -14),
+                labelOrigin: new google.maps.Point(30, -14),                
             },                
             label: {                
                 color: '#b40303',                
