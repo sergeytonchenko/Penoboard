@@ -1365,7 +1365,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _numscroller_1_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./numscroller-1.0 */ \"./src/js/numscroller-1.0.js\");\n/* harmony import */ var _numscroller_1_0__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_numscroller_1_0__WEBPACK_IMPORTED_MODULE_0__);\n// require ('jq-numscroll/src/js/core')\n\n$(document).ready(function () {\n  $(\".numscroller\").numScroll();\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/counter.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _numscroller_1_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./numscroller-1.0 */ \"./src/js/numscroller-1.0.js\");\n/* harmony import */ var _numscroller_1_0__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_numscroller_1_0__WEBPACK_IMPORTED_MODULE_0__);\n\n$(document).ready(function () {\n  $(\".numscroller\").numScroll();\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/counter.js?");
 
 /***/ }),
 
