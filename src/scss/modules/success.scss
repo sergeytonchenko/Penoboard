@@ -104,10 +104,6 @@
         }
     }
 
-    .num-count {
-        opacity: 0; 
-    }
-
     &-market {
         position: absolute;
         display: flex;
@@ -169,8 +165,7 @@
         }
 
         &__num {            
-            @include text-main (72px, 700);
-            opacity: 0;            
+            @include text-main (72px, 700);                      
         }
     }    
 }
