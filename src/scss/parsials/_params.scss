@@ -1,12 +1,33 @@
-@import url(https://db.onlinewebfonts.com/c/d774b33db4359ae753c71d42afdf125a?family=EuropeExt+Web);
-@import url(https://db.onlinewebfonts.com/c/125b16fc82d4edd4fba33e4d14bc9b53?family=EuropeExt);
+@font-face {
+    font-family: "EuropeExt";
+    src: url("../../fonts/europe-ext.eot"); /* IE9 Compat Modes */
+    src: url("../../fonts/europe-ext.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */        
+        url("../../fonts/europe-ext.svg") format("svg"), /* Legacy iOS */
+        url("../../fonts/europe-ext.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("../../fonts/europe-ext.woff") format("woff"), /* Modern Browsers */
+        url("../../fonts/europe-ext.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "EuropeExt Bold";
+	src: url("../../fonts/europeext-bold.eot"); /* IE9 Compat Modes */
+	src: url("../../fonts/europeext-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */		
+		url("../../fonts/europeext-bold.svg") format("svg"), /* Legacy iOS */
+		url("../../fonts/europeext-bold.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../../fonts/europeext-bold.woff") format("woff"), /* Modern Browsers */
+		url("../../fonts/europeext-bold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
 
 $color-primary: #ffffff;
 $color-secondary: #01983b;
 $color-third: #2c2783;
 $font-primary: "Arial";
-$font-secondary: "EuropeExt Web";
-$font-secondary-bold: "EuropeExt";
+$font-secondary: "EuropeExt";
+$font-secondary-bold: "EuropeExt Bold";
 
 input:focus {
     border: 1px solid black;
