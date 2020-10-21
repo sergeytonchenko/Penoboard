@@ -189,6 +189,10 @@
 
         &-telephone {
             justify-content: center;
+
+            &__link {
+                margin-right: 6px;
+            }
         }
     }
 
@@ -215,6 +219,10 @@
     }
 
     .success {
+
+        &-wrap {
+            height: 435px;
+        }
 
         &__title {
             font-size: 32px;
@@ -271,11 +279,7 @@
 
     .info-login, .info-select {
         display: none;
-    }
-
-    .info-telephone__link {
-        margin-right: 6px;
-    }
+    }    
 
     .form__title {
         font-size: 22px;
