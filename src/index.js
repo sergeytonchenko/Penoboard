@@ -16,8 +16,6 @@ import './js/slider';
 import './js/parralax';
 import './js/map';
 
-let script = document.createElement('script');
-script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDoau3_-oGhkZ50NRJ0WBnKYsmn2b_KYRY&callback=initMap&libraries=&v=weekly";
-document.body.append(script)
+
 
 
