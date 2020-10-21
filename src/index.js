@@ -14,7 +14,6 @@ import './js/formReg';
 import './js/slider';
 import './js/parralax';
 import './js/counter';
-import './js/jquery.spincrement.min'
 import './js/map';
 
 
