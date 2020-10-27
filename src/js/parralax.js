@@ -1,4 +1,4 @@
-$(window).scroll(function () {
+export let $parralax = $(window).scroll(function () {
     let scroll = $(window).scrollTop();
     let offset = $(".success-wrap").offset().top;
 

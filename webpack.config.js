@@ -7,6 +7,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
+
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
@@ -19,7 +20,7 @@ module.exports = {
     },
     devServer: {
       contentBase: path.join(__dirname, 'dist'),
-      compress: true,
+      compress: true,      
       port: 9000
     },
     plugins: [

@@ -1,22 +1,17 @@
-$(window).scroll(function () {
+export let $header = $(window).scroll(function () {
     const scroll = $(window).scrollTop();    
 
     if (scroll > 0) {
-        $(".header").css({
-            height: "50px"         
-        })
+        $(".header").removeClass(
+            'header--height');
+        $(".header").addClass(
+            'header--scroll');
+
     }
     else {
-        $(".header").css({
-            height: "76px"         
-        })
+        $(".header").removeClass(
+            'header--scroll');
+        $(".header").addClass(
+            'header--height')
     } 
-})
-
-//fullscreen
-const elem = document.querySelector('.info-btn');
-
-elem.onclick = function () {
-    document.documentElement.requestFullscreen();
-}    
-
+});
