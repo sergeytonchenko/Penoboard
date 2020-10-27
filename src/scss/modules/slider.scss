@@ -9,39 +9,28 @@
     display: block;
 }
 .swiper-text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 36px;
     left: 0;
-    width: 100%;    
-    max-width: 683px;
-    height: 140px;  
-    background-color: #01983b6b;   
-    padding-left: 29px;
-    padding-right: 54px;
+    padding: 36px 54px 7px 29px;     
+    background-color: #01983b6b; 
     
     &__title {
         @include text-slider (30px, $font-secondary);
-        line-height: 28px;
-
-        &--left {
-            float: left;
-            margin-top: 36px;
-        }
-
+        line-height: 28px; 
+        
         &--right {
-            float: right;
-            margin-bottom: 16px;
+            align-self: flex-end;
+            margin-bottom: 1rem;
         }
-    }
+    }    
 
     &__subtitle {
         float: left;
         @include text-slider (24px, $font-secondary-bold);
     }    
-}
-
-.clear {
-    clear: both;
 }
 
 .swiper-pagination {
