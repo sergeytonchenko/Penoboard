@@ -82,32 +82,12 @@
     function numberRoll(slno,min,max,increment,timeout){//alert(slno+"="+min+"="+max+"="+increment+"="+timeout);
         
         function num(min) {
-            let numStr = String(min);
-            let newCount1;
-            let newCount2;
-            let newCount3;
-            let num;
-            if (min < 1000) {
-                return numStr;
-            } else if (min >= 1000 && min < 10000 ) {                
-                newCount1 = numStr.slice(0, 1);
-                newCount2 = numStr.slice(1, 5);
-                num = newCount1 + ' ' + newCount2;
-            } else if (min >= 10000 && min < 100000 ) {                
-                newCount1 = numStr.slice(0, 2);
-                newCount2 = numStr.slice(2, 6);
-                num = newCount1 + ' ' + newCount2;
-            } else if (min >= 100000 && min < 1000000 ) {                
-                newCount1 = numStr.slice(0, 3);
-                newCount2 = numStr.slice(3, 7);
-                num = newCount1 + ' ' + newCount2;
-            } else if (min >= 1000000 && min < 10000000 ) {                
-                newCount1 = numStr.slice(0, 1);
-                newCount2 = numStr.slice(1, 4);
-                newCount3 = numStr.slice(4, 7);
-                num = newCount1 + ' ' + newCount2 + ' ' + newCount3;
-            }                         
-            return num;            
+            let numStr = String(min).split('');           
+    
+            numStr.splice(-3, 0, ' ');
+            numStr.splice(-7, 0, ' ');                        
+            
+            return numStr;            
         }
 
     
