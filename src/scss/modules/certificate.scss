@@ -1,39 +1,35 @@
-.certif {
-    height: auto;
-    position: relative;
+.certif {        
     text-align: center;
-    background-color: #fff;    
+    background-color: #fff;
+}    
 
-    &-logo {        
-        padding-top: 59px;
-        margin-bottom: 11px;
+.certif-logo {        
+    padding-top: 59px;
+    margin-bottom: 4px;
+}
+
+.certif-title {
+    @include text-cerf(30px);
+    margin-bottom: 25px;
+}
+
+.certif-box {    
+    margin-bottom: 26px;
+
+    a {
+        display: inline-block;
+        margin-right: 35px;            
     }
 
-    &-title {
-        @include text-cerf(30px);        
-        line-height: 0.533;
+    a:last-child {
+        margin-right: 0px;
     }
+}
 
-    &-box {
-        margin-top: 32px;
-        margin-bottom: 26px;
+.certif-subtitle {
+    @include text-cerf(24px); 
+}
 
-        a {
-            display: inline-block;
-            margin-right: 35px;            
-        }
-
-        a:last-child {
-            margin-right: 0px;
-        }
-    }
-
-    &-subtitle {
-        @include text-cerf(24px); 
-    }
-
-    &-img-wrap {
-        padding-top: 7px;
-        padding-bottom: 208px;  
-    }
+.certif-img {
+    margin-top: 7px;      
 }

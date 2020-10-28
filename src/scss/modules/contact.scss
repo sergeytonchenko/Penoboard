@@ -1,61 +1,55 @@
 .contact {
-    position: absolute;
+    position: relative;
+    margin: 0 auto;
+    padding: 33px 0;
     bottom: -43px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    height: 207px;
     width: 100%;
     max-width: 1232px;
+    z-index: 2;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: $color-secondary;
-    background: url(../../img/contact_bg2.png) no-repeat,
+    background: 
+        url(../../img/contact_bg2.png) no-repeat,
         url(../../img/contact_bg.png) repeat;
-    background-size: contain, auto;
-    // background-position: bottom, 0 0;
+    background-size: contain, auto;   
     background-position-y: 180%;
     box-shadow: 0 3px 5px rgba(0,0,0,.5),
         inset 0 3px 0 hsla(0,0%,100%,.2);    
-    text-align: center;    
+    text-align: center;
 
-    &-wrap {
-        padding: 33px 0;
-    }
-
-    &-title {
+    &__title {
         @include text-main (30px, 700);        
         margin-bottom: 10px;
         
     }
 
-    &-adress {
+    &__adress {
         @include text-main (18px, 400);
         line-height: 22px;
         text-transform: none;        
     }
+}
 
-    &-phone {
-        margin-top: 11px;
-        margin-bottom: 8px;
-        
-        &__link {
-            @include text-main (14px, 400);
-            text-transform: lowercase; 
-
-            &:hover {
-                text-decoration: underline;
-            }
-        } 
-    }
-
-    &__email {
-        @include text-main (14px, 400); 
-        text-transform: lowercase;
+.contact-phone {
+    margin-top: 11px;
+    margin-bottom: 8px;
+    
+    &__link {
+        @include text-main (14px, 400);
+        text-transform: lowercase; 
 
         &:hover {
             text-decoration: underline;
         }
     }
-    
 }
+
+.contact__email {
+    @include text-main (14px, 400); 
+    text-transform: lowercase;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}    

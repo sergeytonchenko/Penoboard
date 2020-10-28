@@ -1,10 +1,14 @@
+footer {
+    flex: 0 0 auto;  
+}
+
 .footer {
     height: 320px;
     background-image: url(../../img/footer_bg.png);
     display: flex;
     flex-direction: column;
-    align-items: center;    
-
+    align-items: center;
+    
     &-logo {
         margin-top: 15px;
         margin-bottom: -4px;

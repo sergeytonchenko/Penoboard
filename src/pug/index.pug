@@ -12,14 +12,14 @@ html(lang='en')
     meta(name='theme-color' content='#ffffff')    
     title Penoboard
   body    
-    .wrap
-      .wrap-bg    
+    .container
+      .container-wrap    
       include modules/header
       main
         include modules/info
         include modules/success
-      include modules/certificate
-      #map(style="height: 329px; width: 100%")
+        include modules/certificate
+        #map(style="height: 329px; width: 100%")
       include modules/footer
     script(src='https://code.iconify.design/1/1.0.7/iconify.min.js')
     script(src='https://polyfill.io/v3/polyfill.min.js?features=default')    

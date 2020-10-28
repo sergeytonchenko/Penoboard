@@ -130,19 +130,16 @@
             top: 10px;
             font-size: 30px;
         }
+    }    
+
+    .certif-box {
+        margin: 10px 0 10px;
     }
 
-    .certif {
-
-        &-box {
-            margin: 10px 0 10px;
-        }
-
-        &-box a,
-        &-box a:last-child {                
-            margin: 15px;
-        }
-    }
+    .certif-box a,
+    .certif-box a:last-child {                
+        margin: 15px;
+    }    
 
     .contact {
         background-position-y: 120%;
@@ -342,49 +339,43 @@
             font-size: 40px;
             margin-left: 20px;
         }
-    }
-    
-    .certif {
+    } 
 
-        &-logo {
-            padding: 15px 10px 0;
+    .certif-logo {
+        padding: 15px 10px 0;
 
-            img {
-                width: 100%;                
-            }
-        }            
+        img {
+            width: 100%;                
+        }
+    }            
     
-        &-title {
+    .certif-title {
             font-size: 16px;
-        }
+    }
         
-        &-box {
-            margin: 10px 0 10px;
-        }
-
-        &-box a,
-        &-box a:last-child {                
-            margin: 5px;
-        }
+    .certif-box {
+        margin: 10px 0 10px;
     }
 
-    .contact {        
-        height: auto;
-        background-position-y: 115%;
+    .certif-box a,
+    .certif-box a:last-child {                
+        margin: 5px;
+    }
+    
 
-        &-wrap {
-            padding: 20px 5px;
-        }
+    .contact {
+        background-position-y: 115%;        
         
-        &-adress {
+        &__adress {
             font-size: 14px;
             line-height: 15px;
         }
-
-        &-phone__link {
-            line-height: 20px;
-        }
     }
+
+    .contact-phone__link {
+        line-height: 20px;
+    }
+    
 
     .footer {
         padding: 0 10px;
