@@ -2,36 +2,54 @@ footer {
     flex: 0 0 auto;  
 }
 
-.footer {
-    height: 320px;
+.footer-logo {
+    padding-top: 15px;
+}
+
+.footer {    
     background-image: url(../../img/footer_bg.png);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    &-logo {
-        margin-top: 15px;
-        margin-bottom: -4px;
+    padding: 0 15px;    
+
+    &__title {
+        position: relative;
+        font-family: $font-secondary-bold;
+        font-size: 40px;
+        color: $color-primary;
+        text-transform: uppercase;
+        margin-bottom: -3px;
+
+        &::after {
+            content: 'TM';
+            position: absolute;
+            top: -4px;
+            right: -18px;
+            font-family: $font-secondary;
+            font-size: 10px;
+            color: $color-primary;
+            text-transform: uppercase;
+        }
     }
 
-    &-copyright {
-        @include text-main (12px, 700);        
-        margin-top: 4px;
-    }
-
-    &-social-title {
+    &__copyright {
         @include text-main (12px, 700);
-        margin-top: 10px;
+        margin-bottom: 12px; 
     }
 
-    &-social {
-        display: flex;
-        margin-top: 6px;
-        margin-bottom: 7px;
-        color: #ffffff;
-    }
+    &__subtitle {
+        @include text-main (10px, 700);
+        margin-bottom: 5px;
+    } 
+}    
 
-    &-social__linkedin {
+.footer-social {
+    display: flex;    
+    margin-bottom: 7px;
+    color: #ffffff;
+
+    &__linkedin {
         margin-right: 10px;
 
         &:hover a {
@@ -39,27 +57,34 @@ footer {
         }
     }
 
-    &-social__vk {        
+    &__vk {        
 
         &:hover a {
             color:  #4c75a3;
         }
     }
 
-    &-social__link {
+    &__link {
         @include text-main (35px, 400);        
     }
-    
-    &-banner-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include text-main (10px, 700);        
-        margin-top: 4px;
-        margin-bottom: 16px;
-    }
+} 
 
-    &-banner__link {
+.footer-image {
+    margin-bottom: 4px;
+
+    img {
+        display: block;
+    }
+}
+    
+.footer-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include text-main (10px, 700); 
+    margin-bottom: 16px;
+
+    &__link {
         @include text-main (10px, 700);
         letter-spacing: .5px; 
         
@@ -72,12 +97,13 @@ footer {
             text-shadow: none;
         }
     }
+}   
 
-    &-develop-title {
-        @include text-main (12px, 700);
-    }
+.footer-develop {
+    padding-bottom: 20px;
+    @include text-main (12px, 700);
 
-    &-develop__link {
+    &__link {
         color: #ffffff;
 
         &:hover {
@@ -89,7 +115,5 @@ footer {
             text-shadow: none;
         }
     }
-
-
 }
 

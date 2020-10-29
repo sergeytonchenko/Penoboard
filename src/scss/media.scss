@@ -375,27 +375,36 @@
     .contact-phone__link {
         line-height: 20px;
     }
-    
 
-    .footer {
-        padding: 0 10px;
+    .footer-image {
+        margin-bottom: 10px;
 
-        &__title, &__banner {
+        img {
             width: 100%;
         }
-    
-        &-banner-title {
-            margin-top: 15px;
-            flex-wrap: wrap;
-            
-            p:last-child {
-                display: none;
-            }
+    }
+
+    .footer-banner {            
+        flex-wrap: wrap;
+        
+        p:last-child {
+            display: none;
         }
-    
-        &-banner-title,
-        &-banner__link {        
+
+        &__link {        
             font-size: 12px;        
         }
+    }    
+
+    .footer { 
+        
+        &__title {
+            font-size: 32px;
+            margin-bottom: 5px;
+
+            &::after {
+                font-size: 8px;                
+            }
+        } 
     }    
 }
