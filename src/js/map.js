@@ -1,7 +1,10 @@
-let map;
+let googleMap = document.createElement('script');
+googleMap.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDoau3_-oGhkZ50NRJ0WBnKYsmn2b_KYRY";
 
-function initMap() {    
+document.body.append(googleMap);
 
+googleMap.onload = function initMap() {  
+        let map;
         let zoom = 13;
         let screenWidth = document.documentElement.clientWidth;
         let center = { lat: 46.668713, lng: 32.632895 };    
@@ -44,8 +47,4 @@ function initMap() {
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map,marker);
         });
-};  
-
-initMap();
-
-
+}; 
